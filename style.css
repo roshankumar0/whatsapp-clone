@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.back-container{
+    position: relative;
+}
+.chat-top{
+    background:#22dc33;
+    min-height: 59px;
+}
+.profile-image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.border-right{
+    border-right: 1px solid black;
+}
