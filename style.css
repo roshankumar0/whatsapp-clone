@@ -8,9 +8,6 @@
     padding: 0;
     position: relative;
 }
-.back-container{
-    position: relative;
-}
 .chat-top{
     background:#22dc33;
     min-height: 59px;
@@ -23,3 +20,12 @@
 .border-right{
     border-right: 1px solid black;
 }
+.contact{
+    background-color: aqua;
+    min-height: 600px;
+}
+.contact-scroll{
+    overflow-y: scroll;
+    height: 600px;
+}
+
