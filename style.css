@@ -1,31 +1,45 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.container-fluid{
+
+.container-fluid {
     margin: 0;
     padding: 0;
     position: relative;
 }
-.chat-top{
-    background:#22dc33;
+
+.chat-top {
+    background: #202c33;
     min-height: 59px;
+    color: white;
 }
-.profile-image{
+
+.profile-image {
     height: 30px;
     width: 30px;
     border-radius: 50%;
 }
-.border-right{
+
+.border-right {
     border-right: 1px solid black;
 }
-.contact{
-    background-color: aqua;
+
+.contact {
+    background: #202c33;
     min-height: 600px;
 }
-.contact-scroll{
+
+.contact-scroll {
     overflow-y: scroll;
     height: 600px;
 }
 
+.chat td {
+    border: none;
+}
+
+.contact td:hover {
+    color: white;
+}
