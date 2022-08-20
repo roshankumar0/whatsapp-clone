@@ -43,3 +43,24 @@
 .contact td:hover {
     color: white;
 }
+
+.message-scroll {
+    overflow-y: scroll;
+    height: 550px;
+}
+
+.message-box {
+    background: #F0F0F0;
+}
+
+.bg {
+    background-color: #2A3942;
+}
+
+.bg2 {
+    background: #202c33;
+}
+.border{
+    border: none;
+    outline: none;
+}
