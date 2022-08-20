@@ -60,7 +60,31 @@
 .bg2 {
     background: #202c33;
 }
-.border{
+
+.border {
     border: none;
     outline: none;
+}
+
+.message-box svg {
+    height: 22px;
+    width: 22px;
+}
+.mobile{
+    display: none!important;
+    background-color: red;
+}
+@media only screen and (max-width: 600px) {
+    .contact{
+        width: 100%;
+    }
+    .chat-top {
+        justify-content: center;
+    }
+    .contact-scroll{
+        height: 100%;
+    }
+    .contact-scroll.message-scroll.chat{
+        display: none;
+    }
 }
