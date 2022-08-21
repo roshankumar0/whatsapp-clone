@@ -74,20 +74,32 @@
 .mobile {
     display: none !important;
 }
-.mobiles{
+
+.mobiles {
     max-width: 480px;
     margin: auto;
+    display: none;
 }
-li{
+
+li {
     list-style: none;
 }
+
 .header-box {
     background-color: #075E54;
     color: white;
-    height: 59px;
+    padding: 13px 32px
 }
 
-@media only screen and (max-width: 600px) {
+.text-white {
+    color: white;
+}
+
+.chat-bg {
+    background: #202c33;
+}
+
+@media only screen and (max-width: 480px) {
     .contact {
         width: 100%;
     }
@@ -101,6 +113,13 @@ li{
     }
 
     .contact-scroll.message-scroll.chat {
+        display: none;
+    }
+
+    .mobiles {
+        display: block;
+    }
+    .back-container{
         display: none;
     }
 }
