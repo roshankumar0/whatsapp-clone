@@ -70,21 +70,37 @@
     height: 22px;
     width: 22px;
 }
-.mobile{
-    display: none!important;
-    background-color: red;
+
+.mobile {
+    display: none !important;
 }
+.mobiles{
+    max-width: 480px;
+    margin: auto;
+}
+li{
+    list-style: none;
+}
+.header-box {
+    background-color: #075E54;
+    color: white;
+    height: 59px;
+}
+
 @media only screen and (max-width: 600px) {
-    .contact{
+    .contact {
         width: 100%;
     }
+
     .chat-top {
         justify-content: center;
     }
-    .contact-scroll{
+
+    .contact-scroll {
         height: 100%;
     }
-    .contact-scroll.message-scroll.chat{
+
+    .contact-scroll.message-scroll.chat {
         display: none;
     }
 }
