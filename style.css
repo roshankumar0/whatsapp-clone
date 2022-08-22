@@ -99,8 +99,16 @@ li {
     background: #202c33;
 }
 
+.chat-bg span {
+    font-size: 20px;
+    font-weight: 600;
+}
+.chat-bg td{
+    color: gray;
+}
+
 @media only screen and (max-width: 480px) {
-    .contact {
+    /* .contact {
         width: 100%;
     }
 
@@ -114,12 +122,53 @@ li {
 
     .contact-scroll.message-scroll.chat {
         display: none;
-    }
+    } */
 
     .mobiles {
         display: block;
     }
-    .back-container{
+
+    .back-container {
         display: none;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .contact-scroll {
+        height: 100%;
+    }
+
+    .chat-bg {
+        background-color: white;
+        color: black;
+    }
+
+    .mobiles svg {
+        margin: 0 8px;
+        height: 22px;
+        width: 22px;
+    }
+
+    .chatbox li {
+        font-size: 24px;
+    }
+
+    .right {
+        margin-right: -20px;
+    }
+
+    .profile-image {
+        height: 60px;
+        width: 60px;
+    }
+    .chatbox li:hover,.chatbox li:active{
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 15%;
+        background: gray;
+        display: block;
     }
 }
