@@ -47,7 +47,10 @@
 .message-scroll {
     overflow-y: scroll;
     height: 550px;
+
+    /* background: #202c33; */
 }
+
 
 .message-box {
     background: #F0F0F0;
@@ -103,7 +106,8 @@ li {
     font-size: 20px;
     font-weight: 600;
 }
-.chat-bg td{
+
+.chat-bg td {
     color: gray;
 }
 
@@ -152,9 +156,11 @@ li {
     }
 
     .chatbox li {
-        font-size: 24px;
+        font-size: 18px;
     }
-
+    .chatbox{
+        margin-top: 18px;
+    }
     .right {
         margin-right: -20px;
     }
@@ -163,7 +169,8 @@ li {
         height: 60px;
         width: 60px;
     }
-    .chatbox li:hover,.chatbox li:active{
+
+    .chatbox li:hover, .chatbox li:active {
         content: "";
         position: absolute;
         height: 4px;
