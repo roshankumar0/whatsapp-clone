@@ -158,9 +158,11 @@ li {
     .chatbox li {
         font-size: 18px;
     }
-    .chatbox{
+
+    .chatbox {
         margin-top: 18px;
     }
+
     .right {
         margin-right: -20px;
     }
@@ -177,5 +179,18 @@ li {
         width: 15%;
         background: gray;
         display: block;
+    }
+
+    svg.bi.bi-chat-right-text {
+        position: fixed;
+        right: 10%;
+        bottom: 5%;
+        background: green;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 12px;
+        color: white;
+        cursor: pointer;
     }
 }
