@@ -102,6 +102,10 @@ li {
     background: #202c33;
 }
 
+tbody.chat-bg {
+    background: #202c33;
+}
+
 .chat-bg span {
     font-size: 20px;
     font-weight: 600;
@@ -147,12 +151,15 @@ li {
     flex: 1;
 
 }
-svg.bi.bi-search.searchbox1{
+
+svg.bi.bi-search.searchbox1 {
     margin: 0 20px;
 }
-svg.bi.bi-filter{
+
+svg.bi.bi-filter {
     margin: 0 20px;
 }
+
 @media only screen and (max-width: 480px) {
     /* .contact {
         width: 100%;
