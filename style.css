@@ -89,7 +89,7 @@ li {
 }
 
 .header-box {
-    background: #202c33;
+ background: #202c33;
     color: white;
     padding: 13px 32px
 }
@@ -101,9 +101,8 @@ li {
 .chat-bg {
     background: #202c33;
 }
-
-tbody.chat-bg {
-    background: #202c33;
+tbody.chat-bg{
+    background: #111b21;
 }
 
 .chat-bg span {
@@ -151,15 +150,12 @@ tbody.chat-bg {
     flex: 1;
 
 }
-
-svg.bi.bi-search.searchbox1 {
+svg.bi.bi-search.searchbox1{
     margin: 0 20px;
 }
-
-svg.bi.bi-filter {
+svg.bi.bi-filter{
     margin: 0 20px;
 }
-
 @media only screen and (max-width: 480px) {
     /* .contact {
         width: 100%;
