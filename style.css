@@ -50,14 +50,22 @@
 
     /* background: #202c33; */
 }
-.message-box{
+
+.message-box {
     padding-right: 9%;
     padding-left: 9%;
     background: #202c33;
+    overflow: hidden;
 }
 
 .message-box p:nth-child(even) {
     text-align: right;
+
+
+}
+
+tbody small:nth-child(odd) {
+    color: #25D366;
 }
 
 .message-box small {
@@ -67,16 +75,35 @@
     border-radius: 3px 8px 8px 27px;
 }
 
+
+.posi {
+    position: sticky;
+    top: 20px;
+}
+
+tbody small:nth-child(odd)::after {
+    content: "1";
+    height: 20px;
+    width: 20px;
+    background: red;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    color: white;
+    background: #25D366;
+}
+
 .bg {
     background-color: #2A3942;
 }
 
 .bg2 {
     background: #202c33;
+    margin: 0;
 }
 
 .border {
-    border: none;
+    border: none!important;
     outline: none;
 }
 
@@ -101,8 +128,9 @@ li {
 
 .header-box {
     background: #202c33;
-    color: white;
-    padding: 13px 32px
+    padding: 13px 32px;
+    color: gray;
+    font-weight: 600;
 }
 
 .text-white {
@@ -252,5 +280,17 @@ svg.bi.bi-filter {
         padding: 12px;
         color: white;
         cursor: pointer;
+    }
+
+    .status::after {
+        content: "";
+        background-color: #adb5bd;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        right: 173px;
+        top: 81px;
     }
 }
