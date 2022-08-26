@@ -60,8 +60,12 @@
 
 .message-box p:nth-child(even) {
     text-align: right;
+}
 
-
+.dflex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 tbody small:nth-child(odd) {
@@ -69,16 +73,18 @@ tbody small:nth-child(odd) {
 }
 
 .message-box small {
-    background-color: #111b21;
+    background-color: #00a884;
     color: white;
     padding: 6px 7px 8px 9px;
-    border-radius: 3px 8px 8px 27px;
-}
 
+}
+svg{
+    cursor: pointer;
+}
 
 .posi {
     position: sticky;
-    top: 20px;
+    top: 10px;
 }
 
 tbody small:nth-child(odd)::after {
@@ -103,7 +109,7 @@ tbody small:nth-child(odd)::after {
 }
 
 .border {
-    border: none!important;
+    border: none !important;
     outline: none;
 }
 
@@ -164,7 +170,7 @@ tbody.chat-bg {
     align-items: center;
     height: 35px;
     background: #111b21;
-    margin: 20px 0;
+    margin: 20px 10px;
     cursor: pointer;
 }
 
