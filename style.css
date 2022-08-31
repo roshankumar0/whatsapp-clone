@@ -3,7 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+.contact-scroll small{
+    position: relative;
+}
+.row.message-box.bg2.text-white.p-3 {
+    background-color: #202c33;
+    align-items: center;
 
+}
+.background-img{
+    background: url("https://source.unsplash.com/featured/300x204");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .container-fluid {
     margin: 0;
     padding: 0;
@@ -54,7 +66,6 @@
 .message-box {
     padding-right: 9%;
     padding-left: 9%;
-    background: #202c33;
     overflow: hidden;
 }
 
@@ -65,7 +76,7 @@
 .dflex {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+
 }
 
 tbody small:nth-child(odd) {
@@ -98,6 +109,9 @@ tbody small:nth-child(odd)::after {
     text-align: center;
     color: white;
     background: #25D366;
+    position: absolute;
+    /* right: 0; */
+    left: 70px;
 
 }
 
