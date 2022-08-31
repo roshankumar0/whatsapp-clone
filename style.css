@@ -78,7 +78,8 @@ tbody small:nth-child(odd) {
     padding: 6px 7px 8px 9px;
 
 }
-svg{
+
+svg {
     cursor: pointer;
 }
 
@@ -97,6 +98,7 @@ tbody small:nth-child(odd)::after {
     text-align: center;
     color: white;
     background: #25D366;
+
 }
 
 .bg {
@@ -125,7 +127,7 @@ tbody small:nth-child(odd)::after {
 .mobiles {
     max-width: 480px;
     margin: auto;
-    display: none;
+
 }
 
 li {
@@ -147,7 +149,7 @@ li {
     background: #202c33;
 }
 
-tbody.chat-bg {
+.chat-bg {
     background: #111b21;
 }
 
@@ -223,11 +225,7 @@ svg.bi.bi-filter {
     } */
 
     .mobiles {
-        display: block;
-    }
-
-    .back-container {
-        display: none;
+        height: 100vh;
     }
 
     .logo {
@@ -241,6 +239,7 @@ svg.bi.bi-filter {
     .chat-bg {
         background-color: white;
         color: black;
+
     }
 
     .mobiles svg {
@@ -251,6 +250,7 @@ svg.bi.bi-filter {
 
     .chatbox li {
         font-size: 18px;
+        position: relative;
     }
 
     .chatbox {
@@ -288,7 +288,7 @@ svg.bi.bi-filter {
         cursor: pointer;
     }
 
-    .status::after {
+    .status::before {
         content: "";
         background-color: #adb5bd;
         height: 8px;
@@ -296,7 +296,30 @@ svg.bi.bi-filter {
         border-radius: 50%;
         display: block;
         position: absolute;
-        right: 173px;
-        top: 81px;
+        left: 82px;
+        top: 10px;
+    }
+
+    .status::after {
+        content: "";
+        background-color: #00a884;
+        height: 2px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 32px;
+    }
+
+    .mobiles tbody small::after {
+        content: "1";
+        position: absolute;
+        right: 20px;
+        background: #25D366;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .mobiles {
+        display: none;
     }
 }
