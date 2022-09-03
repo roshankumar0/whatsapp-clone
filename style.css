@@ -1,3 +1,9 @@
+/* @import url(/Helvetica-Neue-Font/Helvetica\ Neue\ Medium\ Extended/); */
+@font-face {
+    font-family: Helvetica;
+    src: url(/Helvetica-Neue-Font/Helvetica\ Neue\ W01\ 66\ Medium\ It/font-family);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,18 +13,126 @@
     vertical-align: initial;
     outline: none;
     border: 0;
+    color: #aebac1;
+}
+
+.row {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.padding--right {
+    padding-right: 0;
+    padding: 10px 16px;
+}
+
+/* left--content goes to here  */
+.small.text {
+    font-size: 14px;
+}
+
+.contact--list svg {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+
+}
+
+.left--content {
+    background: #111b21;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: fixed;
+    height: 100%;
+    width: min(100%, 34%);
+    padding: 0 20px;
+
+}
+
+.left--content::-webkit-scrollbar {
+    background-color: gray;
+    width: 2px;
+
+}
+
+.flex1 {
+    flex: 1;
+    padding-right: 15px;
+
+}
+
+.my--profile.d-flex {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    pointer-events: all;
+    padding: max(3vh, 1rem);
+}
+
+.my--profile.d-flex:hover {
+    background: #202c33;
+
+}
+
+.time {
+    position: relative;
+    text-transform: capitalize;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 12px !important;
+}
+
+.name {
+    font-size: 17px;
+    color: #e9edef;
+}
+
+.profile {
+    margin-top: 40px;
+}
+
+.time::after {
+    content: "1";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    color: black;
+    background: #25D366;
+    position: absolute;
+    left: 32px;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+/* right--content goes to here */
+.right .online {
+    display: block;
+    text-align: center;
+
+}
+
+.padding--left {
+    padding-left: 0;
+}
+
+.col.d-flex.align-items-center.justify-content-between.chat-top {
+    padding: 0 20px;
 }
 
 svg.bi.bi-check2-all {
     color: #53bdeb;
 }
 
-.contact-scroll small {
-    position: relative;
+svg.bi.bi-paperclip {
+    transform: rotate(45deg);
 }
 
-.height {
-    height: 100vh;
+.col-sm-2.mt-1.dflex {
+    width: 95px;
 }
 
 .background-img {
@@ -28,18 +142,12 @@ svg.bi.bi-check2-all {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: red;
-
-
-
-
-
 }
 
 .container-fluid {
     margin: 0;
     padding: 0;
-    position: relative;
+
 }
 
 .chat-top {
@@ -52,33 +160,18 @@ svg.bi.bi-check2-all {
 }
 
 .profile-image {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 }
 
 .border-right {
     border-right: 1px solid black;
-}
 
-.contact {
-    background: #111b21;
-
-}
-
-.contact-scroll {
-    overflow-y: scroll;  
-     height: 100vh;
 }
 
 .chat td {
     border: none;
-}
-.message-scroll {
-    /* overflow-y: scroll; */
-    /* background: #202c33; */
-    position: relative;
-    height: 100vh;
 }
 
 .message-box {
@@ -103,16 +196,7 @@ p.message--right {
 
 tbody small:nth-child(odd) {
     color: #25D366;
-}
-
-.bg--gray span:nth-child() {
-    color: hsla(0, 0%, 100%, 0.6);
-
-}
-
-.time {
-    text-transform: capitalize;
-    color: hsla(0, 0%, 100%, 0.6);
+    position: relative;
 }
 
 .message-box small {
@@ -135,24 +219,8 @@ svg {
 
 .posi {
     position: sticky;
-    top: 30px;
+    top: 19px;
     z-index: 10;
-}
-
-tbody small:nth-child(odd)::after {
-    content: "1";
-    height: 20px;
-    width: 20px;
-    background: red;
-    border-radius: 50%;
-    display: block;
-    text-align: center;
-    color: black;
-    background: #25D366;
-    position: absolute;
-    /* right: 0; */
-    left: 40px;
-
 }
 
 small.right--borderradius {
@@ -170,11 +238,26 @@ small.right--borderradius {
     position: fixed;
     width: 75%;
     bottom: 0px;
+
+}
+
+.bg2 svg {
+    color: #8696a0;
+    width: 26px;
+    height: 26px;
 }
 
 .border {
     border: none !important;
     outline: none;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+
 }
 
 .message-box svg {
@@ -189,6 +272,7 @@ small.right--borderradius {
 .mobiles {
     max-width: 480px;
     margin: auto;
+    background: #111b21;
 
 }
 
@@ -203,25 +287,11 @@ li {
     font-weight: 600;
 }
 
-.chat-bg {
-    background: #202c33;
-}
-
-.chat-bg {
-    background: #111b21;
-}
-
-.chat-bg span {
-    font-size: 20px;
-    font-weight: 600;
-}
-
 .chat-bg td {
     color: gray;
 }
 
 .searchbar {
-    background: white;
     display: flex;
     padding: 0 12px;
     border-radius: 8px;
@@ -229,7 +299,6 @@ li {
     align-items: center;
     height: 35px;
     background: #111b21;
-    margin: 20px 10px;
     cursor: pointer;
 }
 
@@ -238,6 +307,7 @@ li {
     background-color: transparent;
     flex: 1;
     outline: none;
+    color: #ffffff;
 }
 
 .search__input {
@@ -253,7 +323,6 @@ li {
     align-items: center;
     height: 35px;
     flex: 1;
-
 }
 
 svg.bi.bi-search.searchbox1 {
@@ -262,11 +331,16 @@ svg.bi.bi-search.searchbox1 {
 
 svg.bi.bi-filter {
     margin: 0 20px;
+    color: white;
+}
+
+.bg--gray span {
+    font-size: 17px;
 }
 
 @media only screen and (max-width: 480px) {
 
-    .back-container {
+    .body__container {
         display: none;
     }
 
@@ -276,11 +350,6 @@ svg.bi.bi-filter {
 
     .logo {
         font-size: 28px;
-    }
-
-    .contact-scroll {
-        height: 100%;
-              
     }
 
     .chat-bg {
@@ -306,11 +375,6 @@ svg.bi.bi-filter {
 
     .right {
         margin-right: -20px;
-    }
-
-    .profile-image {
-        height: 60px;
-        width: 60px;
     }
 
     .chatbox li:hover, .chatbox li:active {
@@ -362,6 +426,15 @@ svg.bi.bi-filter {
         position: absolute;
         right: 20px;
         background: #25D366;
+    }
+
+    .profile {
+        margin-top: 0;
+    }
+
+    .my--profile.d-flex {
+        padding: max(1vh, 0rem);
+        border-bottom: 1px solid #aebac1;
     }
 }
 
