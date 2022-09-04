@@ -13,7 +13,7 @@
     vertical-align: initial;
     outline: none;
     border: 0;
-    color: #aebac1;
+  
 }
 
 .row {
@@ -76,6 +76,10 @@
 
 }
 
+.profile {
+    margin-top: 40px;
+}
+
 .time {
     position: relative;
     text-transform: capitalize;
@@ -88,12 +92,8 @@
     color: #e9edef;
 }
 
-.profile {
-    margin-top: 40px;
-}
-
-.time::after {
-    content: "1";
+.message__count {
+    position: absolute;
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -105,7 +105,11 @@
     left: 32px;
     font-weight: 600;
     font-size: 12px;
+}
 
+.message__delete {
+    color: #667781 !important;
+    font-style: italic;
 }
 
 /* right--content goes to here */
@@ -219,7 +223,7 @@ svg {
 
 .posi {
     position: sticky;
-    top: 19px;
+    top: 8px;
     z-index: 10;
 }
 
@@ -307,13 +311,24 @@ li {
     background-color: transparent;
     flex: 1;
     outline: none;
-    color: #ffffff;
+    color: #aebac1;
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+    font-size: 17px;
+    line-height: 20px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    font-size: 15px;
+   margin-left: 23px;
 }
 
 .search__input {
-    padding-right: 32px;
     box-sizing: border-box;
-    display: flex;
     align-items: center;
     height: 35px;
     background: #202c33;
@@ -323,6 +338,8 @@ li {
     align-items: center;
     height: 35px;
     flex: 1;
+    padding-right: 10px;
+    padding-left: 38px;
 }
 
 svg.bi.bi-search.searchbox1 {
