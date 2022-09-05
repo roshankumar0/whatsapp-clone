@@ -125,7 +125,7 @@
 
 .col.d-flex.align-items-center.justify-content-between.chat-top {
     padding: 0 20px;
-}
+    }
 
 svg.bi.bi-check2-all {
     color: #53bdeb;
@@ -166,7 +166,7 @@ svg.bi.bi-paperclip {
 .profile-image {
     height: 40px;
     width: 40px;
-    border-radius: 50%;
+    
 }
 
 .border-right {
