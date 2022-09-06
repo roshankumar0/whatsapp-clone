@@ -13,7 +13,7 @@
     vertical-align: initial;
     outline: none;
     border: 0;
-  
+
 }
 
 .row {
@@ -51,8 +51,9 @@
 }
 
 .left--content::-webkit-scrollbar {
-    background-color: gray;
-    width: 2px;
+    width: 6px !important;
+    height: 6px !important;
+
 
 }
 
@@ -125,7 +126,7 @@
 
 .col.d-flex.align-items-center.justify-content-between.chat-top {
     padding: 0 20px;
-    }
+}
 
 svg.bi.bi-check2-all {
     color: #53bdeb;
@@ -146,6 +147,9 @@ svg.bi.bi-paperclip {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+   
+
+
 }
 
 .container-fluid {
@@ -166,7 +170,7 @@ svg.bi.bi-paperclip {
 .profile-image {
     height: 40px;
     width: 40px;
-    
+
 }
 
 .border-right {
@@ -184,8 +188,11 @@ svg.bi.bi-paperclip {
     padding-left: 9%;
     padding-top: 6%;
     overflow: hidden;
+    
+}
 
-
+.message-box .message-box--width {
+    width: 50%;
 }
 
 p.message--right {
@@ -324,7 +331,7 @@ li {
     -ms-user-select: text;
     user-select: text;
     font-size: 15px;
-   margin-left: 23px;
+    margin-left: 23px;
 }
 
 .search__input {
