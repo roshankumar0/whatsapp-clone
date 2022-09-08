@@ -1,0 +1,12 @@
+@import url(/style.css);
+
+.container-fluid {
+    max-width: 768px;
+    margin-inline: auto;
+}
+
+.bg2 {
+    position: sticky;
+    margin-bottom: 0;
+    width: 100%;
+}

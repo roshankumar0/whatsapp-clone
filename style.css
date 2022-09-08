@@ -1,8 +1,5 @@
-/* @import url(/Helvetica-Neue-Font/Helvetica\ Neue\ Medium\ Extended/); */
-@font-face {
-    font-family: Helvetica;
-    src: url(/Helvetica-Neue-Font/Helvetica\ Neue\ W01\ 66\ Medium\ It/font-family);
-}
+/* src: url('./helvetica-neue-font/medium/helvetica-neue-medium.otf'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     padding: 0;
@@ -13,11 +10,11 @@
     vertical-align: initial;
     outline: none;
     border: 0;
-  
+
 }
 
 .row {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .padding--right {
@@ -51,14 +48,24 @@
 }
 
 .left--content::-webkit-scrollbar {
-    background-color: gray;
-    width: 2px;
+    width: 6px !important;
+    height: 6px !important;
+
 
 }
 
 .flex1 {
     flex: 1;
     padding-right: 15px;
+
+}
+
+.flex1 svg {
+    color: #667781 !important;
+}
+
+.message-sent {
+    color: #667781 !important;
 
 }
 
@@ -69,11 +76,11 @@
     height: 72px;
     pointer-events: all;
     padding: max(3vh, 1rem);
+    border-bottom: 0.5px solid #667781;
 }
 
-.my--profile.d-flex:hover {
+.active, .my--profile.d-flex:hover {
     background: #202c33;
-
 }
 
 .profile {
@@ -90,6 +97,7 @@
 .name {
     font-size: 17px;
     color: #e9edef;
+    text-transform: capitalize;
 }
 
 .message__count {
@@ -146,6 +154,9 @@ svg.bi.bi-paperclip {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+
+
 }
 
 .container-fluid {
@@ -166,7 +177,7 @@ svg.bi.bi-paperclip {
 .profile-image {
     height: 40px;
     width: 40px;
-    border-radius: 50%;
+
 }
 
 .border-right {
@@ -185,11 +196,47 @@ svg.bi.bi-paperclip {
     padding-top: 6%;
     overflow: hidden;
 
+}
 
+.message-box .message-box--width {
+    width: 50%;
 }
 
 p.message--right {
-    text-align: right
+    border-radius: 7.5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    margin-inline-start: auto;
+    align-items: end;
+
+}
+
+p.message--left {
+    border-radius: 7.5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    align-items: start;
+
+
+}
+
+p.message--left>small {
+    background-color: #2A3942;
+}
+
+.message-box small {
+    color: white;
+    padding: 6px 7px 8px 9px;
+    border-radius: 8px 0px 8px 8px;
+    font-size: 14.2px;
+    background-color: #005c4b;
+}
+
+.video {
+    color: #667781 !important;
+    margin-left: 5px;
 }
 
 .dflex {
@@ -203,13 +250,7 @@ tbody small:nth-child(odd) {
     position: relative;
 }
 
-.message-box small {
-    background-color: #005c4b;
-    color: white;
-    padding: 6px 7px 8px 9px;
-    border-radius: 8px 0px 8px 8px;
-    font-size: 14.2px;
-}
+
 
 .message-box small span {
     color: hsla(0, 0%, 100%, 0.6);
@@ -227,10 +268,10 @@ svg {
     z-index: 10;
 }
 
-small.right--borderradius {
+/* small.right--borderradius {
     border-radius: 0px 8px 8px 8px;
-    background-color: #2A3942;
-}
+  
+} */
 
 .bg {
     background-color: #2A3942;
@@ -324,7 +365,7 @@ li {
     -ms-user-select: text;
     user-select: text;
     font-size: 15px;
-   margin-left: 23px;
+    margin-left: 23px;
 }
 
 .search__input {
@@ -359,6 +400,7 @@ svg.bi.bi-filter {
 
     .body__container {
         display: none;
+        
     }
 
     .mobiles {
@@ -392,15 +434,6 @@ svg.bi.bi-filter {
 
     .right {
         margin-right: -20px;
-    }
-
-    .chatbox li:hover, .chatbox li:active {
-        content: "";
-        position: absolute;
-        height: 4px;
-        width: 15%;
-        background: gray;
-        display: block;
     }
 
     svg.bi.bi-chat-right-text {
