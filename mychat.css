@@ -10,3 +10,31 @@
     margin-bottom: 0;
     width: 100%;
 }
+
+.date {
+    background: #2A3942;
+    color: #8696A0;
+    padding: 5px 12px 6px;
+    box-shadow: 0 1px 0.5px rgba(var 11, 20, 26, .13);
+    border-radius: 7.5px;
+    max-width: 22%;
+    margin: auto;
+
+}
+
+.myvideocall {
+    background: #2A3942;
+    color: #8696A0;
+    padding: 5px 12px 6px;
+    box-shadow: 0 1px 0.5px rgba(var 11, 20, 26, .13);
+    border-radius: 7.5px;
+    margin: 16px 0;
+    margin-inline: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.myvideocall svg {
+    color: #f15c6d;
+    margin-right: 10px;
+}
