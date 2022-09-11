@@ -13,6 +13,10 @@
 
 }
 
+img {
+    cursor: pointer;
+}
+
 .date {
     background: #2A3942;
     color: #8696A0;
@@ -132,6 +136,22 @@ svg.bi.bi-camera {
 }
 
 /* left--content goes to here  */
+.user {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+}
+
+.user__name {
+    font-size: 16px;
+}
+
+.user__online {
+    font-size: 13px;
+    color: rgb(102, 119, 129) !important;
+
+}
+
 .small.text {
     font-size: 14px;
 }
@@ -206,7 +226,7 @@ svg.bi.bi-camera {
 .my--profile.d-flex {
     flex-direction: row;
     padding: max(1vh, 1rem);
-    border-bottom: 0.5px solid #667781;
+    border-bottom: 0.5px solid #585858;
 }
 
 .active, .my--profile.d-flex:hover {
@@ -251,12 +271,6 @@ svg.bi.bi-camera {
 }
 
 /* right--content goes to here */
-.right .online {
-    display: block;
-    text-align: center;
-
-}
-
 .padding--left {
     padding-left: 0;
     background: url("https://i.pinimg.com/736x/85/ec/df/85ecdf1c3611ecc9b7fa85282d9526e0.jpg");
@@ -302,6 +316,7 @@ svg.bi.bi-paperclip {
 .profile-image {
     height: 40px;
     width: 40px;
+    object-fit: cover;
 
 }
 
@@ -422,6 +437,7 @@ svg {
     position: fixed;
     width: 75%;
     bottom: 0px;
+    align-items: center;
 
 }
 
@@ -432,15 +448,21 @@ svg {
 }
 
 .border {
-    border: none !important;
-    outline: none;
+    border: red !important;
+    outline: red !important;
     box-sizing: border-box;
     flex: 1 1 auto;
     min-width: 0;
     min-height: 20px;
     font-size: 15px;
     font-weight: 400;
+    background: transparent;
     line-height: 20px;
+    background: #2a3942 !important;
+    padding: 9px 12px 11px;
+    margin: 5px 10px;
+
+
 
 }
 
