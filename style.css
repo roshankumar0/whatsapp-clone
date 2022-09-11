@@ -61,7 +61,7 @@
     padding: 6px 7px 8px 9px;
     border-radius: 8px;
     border-radius: 7.5px;
-    width: fit-content;
+    max-width: 65%;
     margin-left: auto;
 
 }
@@ -89,10 +89,12 @@
     border-radius: 8px;
     padding: 4px 12px 8px 8px;
     border-left: 4px solid #53bdeb;
+    width: fit-content;
 }
 
 .reply span {
-    font-size: 12.8px;
+    font-size: 14.2px;
+
 
 }
 
@@ -141,6 +143,27 @@ svg.bi.bi-camera {
 
 }
 
+.share__right, .share__left {
+    position: absolute;
+    color: rgba(233, 237, 239, 0.5);
+    top: 50%;
+}
+
+.share__right {
+    left: -50px;
+    background: #111b21;
+    border-radius: 50%;
+    display: block;
+    transform: rotate(180deg);
+}
+
+.share__left {
+    left: 250px;
+    background: #111b21;
+    border-radius: 50%;
+    display: block;
+}
+
 .left--content {
     background: #111b21;
     overflow: auto;
@@ -152,6 +175,10 @@ svg.bi.bi-camera {
     width: min(100%, 34%);
     padding: 0 20px;
 
+}
+
+.message__send {
+    color: #fff;
 }
 
 .left--content::-webkit-scrollbar {
@@ -310,13 +337,14 @@ p.message--right {
     margin-inline-start: auto;
     align-items: end;
     position: relative;
+    margin-bottom: 4px;
 
 }
 
 .photo__time {
     position: absolute;
-    bottom: 10px;
-    right: 20px;
+    bottom: 8px;
+    right: 8px;
     color: hsla(0, 0%, 100%, 0.6);
     font-size: 12.8px;
 }
@@ -328,6 +356,7 @@ p.message--left {
     max-width: 65%;
     align-items: start;
     position: relative;
+    margin-bottom: 4px;
 
 
 }
