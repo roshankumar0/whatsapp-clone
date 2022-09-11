@@ -10,7 +10,7 @@
     margin-bottom: 0;
     width: 100%;
 }
-
+/* 
 .date {
     background: #2A3942;
     color: #8696A0;
@@ -37,4 +37,12 @@
 .myvideocall svg {
     color: #f15c6d;
     margin-right: 10px;
+} */
+.message-box{
+    margin-bottom: 0;
+}
+@media(max-width:912px){
+    .container-fluid{
+        max-width: 100%;
+    }
 }

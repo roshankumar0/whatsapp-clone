@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="/images/icons8-whatsapp-96.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>whatsapp clone</title>
+</head>
+
+<body>
+    <!-- body container-- goes to here -->
+    <div class="body__container">
+        <!-- contain__body -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left__content -->
+                <div class="col-4 p-0 left">
+                    <div class="col border-right d-flex align-items-center justify-content-between chat-top ">
+                        <img src="https://source.unsplash.com/featured" alt=""
+                            class="profile-image rounded-circle mx-3">
+                        <span class="contact--list">
+                            <svg version="1.1" id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24"
+                                width="24" height="24" class="">
+                                <path fill="#667781"
+                                    d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z">
+                                </path>
+                                <path fill="#009588" d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#667781"
+                                class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                <path
+                                    d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#667781"
+                                class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col ">
+                        <div class="left--content">
+                            <form action="" class="posi">
+                                <div class="searchbar">
+                                    <div class="search__input">
+                                        <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                            <path fill="#667781"
+                                                d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z">
+                                            </path>
+                                        </svg>
+                                        <input type="text" placeholder="Search or start now chat">
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-filter" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                </div>
+                            </form>
+                            <!-- contact-scroll  text-white" -->
+                            <div class="profile" id="parent">
+                                <div class="my--profile d-flex active">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x292" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">Suraj singh</span>
+                                            <span class="time">
+                                                today
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns ">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x302" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">shivam thakur</span>
+                                            <span class="time">
+                                                08:50 PM
+                                                <span class="message__count">2</span>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x208" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">ravin kumar</span>
+                                            <span class="time">
+                                                01:30 AM
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="#53bdeb" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">&#128512; &#128516; &#128525; &#128151;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x207" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">vishal dubey</span>
+                                            <span class="time">
+                                                Yesterday
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                            </svg>
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z" />
+                                                </svg><small class="video">video</small></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x205" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">pushkar jha</span>
+                                            <span class="time">
+                                                08:50 PM
+                                            </span>
+                                        </div>
+                                        <div class="message__delete">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M7.759 6.43a7 7 0 0 1 9.81 9.81l-9.81-9.81ZM6.357 7.858a7 7 0 0 0 9.786 9.786L6.357 7.857ZM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"
+                                                    fill="#667781"></path>
+                                            </svg>
+                                            <span>This message was deleted</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">aman</span>
+                                            <span class="time">
+                                                friday
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my--profile d-flex btns">
+                                    <div>
+                                        <img src="https://source.unsplash.com/featured/300x203" alt=""
+                                            class="profile-image rounded-circle mx-3">
+                                    </div>
+                                    <div class="flex1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span class="name">karan</span>
+                                            <span class="time">
+                                                10/01/2022
+                                            </span>
+                                        </div>
+                                        <div> <svg xmlns="http://www.w3.org/210/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                                <path
+                                                    d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                            </svg>
+                                            <span class="message-sent">okay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right__content -->
+                <div class="col-8 padding--left right">
+                    <div class="col d-flex align-items-center justify-content-between chat-top">
+                        <span>
+                            <img src="https://source.unsplash.com/featured/300x402" alt=""
+                                class="profile-image rounded-circle">
+                            <span class="mx-3">shiva kumar</span>
+                            <br>
+                            <small class="online">Online</small>
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search mx-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col p-0 background-img">
+                        <!-- message-scroll  -->
+                        <div class="message-box ">
+                            <p class="message--left">
+                                <small class="right--borderradius">kaha ho? Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Magni repudiandae ipsa alias. Velit qui
+                                    minus iure in, alias eos nemo dolorum et soluta provident maxime harum
+                                    temporibus nostrum quas distinctio tempore enim culpa numquam, odit quasi
+                                    tenetur optio voluptatum. Quis exercitationem odit totam repellendus.
+                                    Consequuntur, eaque. Repudiandae delectus in quibusdam? <span>10:05
+                                        PM</span></small>
+                            </p>
+                            <p class="message--right"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small class="right--borderradius">kaha ho? <span>10:05
+                                        PM</span></small>
+                            </p>
+                            <p class="message--left message--left--reply"><small>Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing
+                                    elit. Praesentium, unde?
+                                    <span>10:05 PM</span></small>
+                            <p><small>kaha ho? reply... <span>10:05 PM</span></small></p>
+                            </p>
+                            <p class="message--right"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small class="right--borderradius">kaha ho? <span>10:05
+                                        PM</span></small></p>
+                            <p class="message--right"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small class="right--borderradius">kaha ho? <span>10:05
+                                        PM</span></small></p>
+                            <p class="message--right"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small class="right--borderradius">kaha ho? <span>10:05
+                                        PM</span></small></p>
+                            <p class="message--right"><small>kaha ho? Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut numquam cumque porro incidunt non iure odio, excepturi
+                                    nisi, ipsa molestiae necessitatibus asperiores odit? Voluptates repudiandae,
+                                    nemo amet optio dicta labore cupiditate consectetur nostrum dolore accusantium?
+                                    Quae libero iure nihil illo. Quis non quas quibusdam eveniet tempora doloribus
+                                    commodi natus nesciunt. <span>10:05 PM</span></small></p>
+                            <p class="message--right"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small class="right--borderradius">kaha ho? <span>10:05
+                                        PM</span></small></p>
+                            <p class="message--right"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small class="right--borderradius">kaha ho? <span>10:05
+                                        PM</span></small></p>
+                            <p class="message--right"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small class="right--borderradius">kaha ho? <span>10:05
+                                        PM</span></small></p>
+                            <p class="message--right"><small>kaha ho? <span>10:05 PM</span></small></p>
+                            <p class="message--left"><small class="right--borderradius">kaha ho? <span>10:05
+                                        PM</span></small></p>
+                            <p class="message--right"><small>kaha ho? Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut numquam cumque porro incidunt non iure odio, excepturi
+                                    nisi, ipsa molestiae necessitatibus asperiores odit? Voluptates repudiandae,
+                                    nemo amet optio dicta labore cupiditate consectetur nostrum dolore accusantium?
+                                    Quae libero iure nihil illo. Quis non quas quibusdam eveniet tempora doloribus
+                                    commodi natus nesciunt. <span>10:05 PM</span></small></p>
+                            <p class="text-center date">8/10/2022</p>
+                            <div class="myvideocall">
+                                <svg viewBox="0 0 19 16" width="19" height="16" class="">
+                                    <path fill="currentColor"
+                                        d="M11.2 1.8H3.3C2 1.8 1 2.8 1 4.1V11c0 1.1 1 2.2 2.3 2.2h8c1.2 0 2.3-1 2.3-2.3V4.1c-.1-1.3-1.2-2.3-2.4-2.3zm-.9 3.5L6.4 9.2h2.1c.2 0 .4.2.4.4v.4c0 .2-.2.4-.4.4H4.7c-.2 0-.4-.2-.4-.4V6.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v2.1l3.9-3.9c.2-.2.4-.1.5 0l.3.3c.2.2.2.4.1.6zm4.8 0c-.2.1-.3.3-.3.5v3.3c0 .2.1.4.3.5l2.9 2.1V3.2l-2.9 2.1z">
+                                    </path>
+                                </svg><span>Missed video call at 4:32 PM</span>
+                            </div>
+                            <div class="myvideocall">
+                                <svg viewBox="0 0 19 16" width="19" height="16" class="">
+                                    <path fill="currentColor"
+                                        d="M11.2 1.8H3.3C2 1.8 1 2.8 1 4.1V11c0 1.1 1 2.2 2.3 2.2h8c1.2 0 2.3-1 2.3-2.3V4.1c-.1-1.3-1.2-2.3-2.4-2.3zm-.9 3.5L6.4 9.2h2.1c.2 0 .4.2.4.4v.4c0 .2-.2.4-.4.4H4.7c-.2 0-.4-.2-.4-.4V6.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v2.1l3.9-3.9c.2-.2.4-.1.5 0l.3.3c.2.2.2.4.1.6zm4.8 0c-.2.1-.3.3-.3.5v3.3c0 .2.1.4.3.5l2.9 2.1V3.2l-2.9 2.1z">
+                                    </path>
+                                </svg><span>Missed video call at 6:32 AM</span>
+                            </div>
+                            <div class="myvideocall">
+                                <svg viewBox="0 0 19 16" width="19" height="16" class="">
+                                    <path fill="currentColor"
+                                        d="M11.2 1.8H3.3C2 1.8 1 2.8 1 4.1V11c0 1.1 1 2.2 2.3 2.2h8c1.2 0 2.3-1 2.3-2.3V4.1c-.1-1.3-1.2-2.3-2.4-2.3zm-.9 3.5L6.4 9.2h2.1c.2 0 .4.2.4.4v.4c0 .2-.2.4-.4.4H4.7c-.2 0-.4-.2-.4-.4V6.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v2.1l3.9-3.9c.2-.2.4-.1.5 0l.3.3c.2.2.2.4.1.6zm4.8 0c-.2.1-.3.3-.3.5v3.3c0 .2.1.4.3.5l2.9 2.1V3.2l-2.9 2.1z">
+                                    </path>
+                                </svg><span>Missed video call at 6:32 AM</span>
+                            </div>
+                            <p class="message--right img">
+                                <img class="send__photo" height="320px"
+                                    src="/images/WhatsApp Image 2022-09-11 at 1.21.46 AM.jpeg" alt="">
+                                <span class="photo__time">10:05 PM</span>
+                            </p>
+                            <p class="message--left img">
+                                <img class="send__photo" height="320px"
+                                    src="/images/WhatsApp Image 2022-09-11 at 1.21.46 AM.jpeg" alt="">
+                                <span class="photo__time">12:30 PM</span>
+                            </p>
+                            <div class="message--left reply d-flex flex-column">
+                                <div class="d-flex reply__message">
+                                    <div class="d-flex flex-column">
+                                        <span class="contact__reply">My Jio</span>
+                                        <span class="photo__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
+                                                <path
+                                                    d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                                            </svg> Photo</span>
+                                    </div>
+                                    <div class="send__image"><img
+                                            src="/images/WhatsApp Image 2022-09-11 at 1.21.46 AM.jpeg" alt=""
+                                            height="54px" width="58px" class=".send__photo">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="message__send">
+                                        <span>kaha ho? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, eius.</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <span>10:05 PM </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z" />
+                                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row bg2 text-white p-3">
+                        <div class="col-sm-2 mt-1 dflex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-paperclip" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z" />
+                            </svg>
+                        </div>
+                        <div class="col-8 flex1">
+                            <form action="">
+                                <input type="text" name="" class="form-control bg border"
+                                    placeholder="Type a  message....">
+                            </form>
+                        </div>
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-mic" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
