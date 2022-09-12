@@ -375,6 +375,25 @@ p.message--right {
 
 }
 
+svg.bi.bi-emoji-smile.share__right {
+    rotate: (45deg);
+    position: absolute;
+    left: -100px;
+    transform: rotate(0deg);
+    color: #2A3942;
+    padding: 4px;
+    background-color: black;
+
+}
+
+svg.bi.bi-emoji-smile.share__left {
+    transform: rotate(0deg);
+    color: #8696A0;
+    left: 294px;
+    padding: 4px;
+    background-color: black;
+}
+
 .photo__time {
     position: absolute;
     bottom: 8px;
@@ -393,6 +412,10 @@ p.message--left {
     margin-bottom: 4px;
 
 
+}
+
+.message--left svg .bi-emoji-smile {
+    background-color: #2a3942;
 }
 
 p.message--left>small {
@@ -483,6 +506,7 @@ svg {
     box-shadow: none !important;
     color: white !important;
 }
+
 .message-box svg {
     height: 22px;
     width: 22px;
