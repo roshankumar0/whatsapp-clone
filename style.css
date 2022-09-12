@@ -70,6 +70,24 @@ img {
 
 }
 
+.left__reply {
+    margin-left: 0;
+    background: #202c33;
+    margin-top: 4px;
+    color: hsla(0, 0%, 100%, 0.6);
+    padding: 6px 7px 8px 9px;
+    border-radius: 8px;
+    border-radius: 7.5px;
+    max-width: 65%;
+    width: fit-content;
+    font-size: 14.2px;
+
+}
+
+.left__reply .reply__message {
+    background: #1d282f;
+}
+
 .send__image {
     width: 54px;
 }
@@ -210,7 +228,8 @@ svg.bi.bi-camera {
 
 .flex1 {
     flex: 1;
-    padding-right: 15px;
+    border-bottom: 0.5px solid #202c33;
+    padding: 6px;
 
 }
 
@@ -225,8 +244,8 @@ svg.bi.bi-camera {
 
 .my--profile.d-flex {
     flex-direction: row;
-    padding: max(1vh, 1rem);
-    border-bottom: 0.5px solid #585858;
+    padding: 6px 0;
+    cursor: pointer;
 }
 
 .active, .my--profile.d-flex:hover {
@@ -447,25 +466,23 @@ svg {
     height: 26px;
 }
 
-.border {
+.wa-custom-input {
     border: red !important;
     outline: red !important;
     box-sizing: border-box;
     flex: 1 1 auto;
     min-width: 0;
     min-height: 20px;
-    font-size: 15px;
+    font-size: 12.5px;
     font-weight: 400;
     background: transparent;
     line-height: 20px;
     background: #2a3942 !important;
     padding: 9px 12px 11px;
     margin: 5px 10px;
-
-
-
+    box-shadow: none !important;
+    color: white !important;
 }
-
 .message-box svg {
     height: 22px;
     width: 22px;
