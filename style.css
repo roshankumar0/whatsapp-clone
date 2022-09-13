@@ -241,6 +241,9 @@ svg.bi.bi-camera {
     color: #667781 !important;
 
 }
+.profile{
+    margin-top: 20px;
+}
 
 .my--profile.d-flex {
     flex-direction: row;
@@ -250,10 +253,6 @@ svg.bi.bi-camera {
 
 .active, .my--profile.d-flex:hover {
     background: #202c33;
-}
-
-.profile {
-    margin-top: 40px;
 }
 
 .time {
@@ -605,10 +604,6 @@ svg.bi.bi-filter {
 
     }
 
-    .mobiles {
-        height: 100vh;
-    }
-
     .logo {
         font-size: 28px;
     }
@@ -663,35 +658,8 @@ svg.bi.bi-filter {
         top: 10px;
     }
 
-    .status::after {
-        content: "";
-        background-color: #00a884;
-        height: 2px;
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: 32px;
-    }
-
-    .mobiles tbody small::after {
-        content: "1";
-        position: absolute;
-        right: 20px;
-        background: #25D366;
-    }
-
     .profile {
+        padding: 20px;
         margin-top: 0;
-    }
-
-    .my--profile.d-flex {
-        padding: max(1vh, 0rem);
-        border-bottom: 1px solid #aebac1;
-    }
-}
-
-@media only screen and (min-width: 481px) {
-    .mobiles {
-        display: none;
     }
 }
