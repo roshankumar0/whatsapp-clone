@@ -1,9 +1,12 @@
 ## Desktop version
 https://roshnn-whatsapp.netlify.app
 
+## chat-view
+https://roshnn-whatsapp.netlify.app/chat-view
 
-## Best View for Mobile Version
+##  Mobile Version (Check in a real device)
 https://roshnn-whatsapp.netlify.app/mobile
 
-## only chat-view for mobile &  desktop
-https://roshnn-whatsapp.netlify.app/chat-view
+####
+- asdas
+- asdas
